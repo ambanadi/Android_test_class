@@ -1,0 +1,26 @@
+Application Components
+Activities
+public class MainActivity extends Activity {
+}
+----------------
+Services
+public class MyService extends Service {
+}
+------------
+Broadcast Receivers
+public class MyReceiver  extends  BroadcastReceiver {
+   public void onReceive(context,intent){}
+}
+------------
+Content Providers
+public class MyContentProvider extends  ContentProvider {
+   public void onCreate(){}
+}
+---------
+Additional Components
+1 	Fragments (Represents a portion of user interface in an Activity.)
+2 	Views (UI elements that are drawn on-screen including buttons, lists forms etc.)
+3 	Layouts View (hierarchies that control screen format and appearance of the views.)
+4 	Intents (Messages wiring components together.)
+5 	Resources (External elements, such as strings, constants and drawable pictures.)
+6 	Manifest (Configuration file for the application.)

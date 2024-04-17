@@ -1,0 +1,79 @@
+Hello World Example
+(hello_word ပုံကိုကြည့်)
+anim/  animations R.anim class.
+2  color/
+3  drawable/ Image files like .png, .jpg, .gif or XML files  (bitmaps, state lists, shapes, animation)
+4  layout/ -R.layout class.
+5  menu/(Options Menu, Context Menu, or Sub Menu.) R.menu class.
+6  raw/  ID  R.raw filename to open such raw files.
+7  values/ strings, integers, and colors
+    integers.xml - R.integer class.
+    bools.xml - R.bool class.
+    colors.xml - R.color class.
+    dimens.xml -R.dimen class.
+    strings.xml -R.string class.
+    styles.xml - R.style class.
+8  xml
+-------------------------------------------
+MainActivity.java
+package com.example.helloworld;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+public class MainActivity extends AppCompatActivity {
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_main);
+   }
+}
+-----------------------------------
+manifest.xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tutorialspoint7.myapplication">
+   <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+      <activity android:name=".MainActivity">
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+      </activity>
+   </application>
+</manifest>
+--------------------------------------
+strings.xml
+<resources>
+   <string name="app_name">HelloWorld</string>
+   <string name="hello_world">Hello world!</string>
+   <string name="menu_settings">Settings</string>
+   <string name="title_activity_main">MainActivity</string>
+</resources>
+------------
+activity_main.xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent" >
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:padding="@dimen/padding_medium"
+      android:text="@string/hello_world"
+      tools:context=".MainActivity" />
+</RelativeLayout>
+---------------------------------------------------------
+strings.xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="opaque_red">#f00</color>
+<string  name="hello">Hello, World!</string>
+</resources>
+-----------
+------------------

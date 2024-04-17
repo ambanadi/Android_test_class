@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridActivity"
+    android:orientation="vertical">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="10dp"
+        android:gravity="center">
+
+    </GridView>
+
+</LinearLayout>
+---------------
+public class GridActivity extends AppCompatActivity {
+
+    GridView gridView;
+    String[] mobiles={"Apple", "Vivo", "Oppo", "Xiaomi", "OnePlus", "Samsung","realme", "Google Pixel", "Lg","Panasonic", "Nokia", "Sony"};
+    Integer[] logos={R.drawable.iphone_wp, R.drawable.vivo, R.drawable.oppo, R.drawable.xiaomi, R.drawable.oneplus, R.drawable.samsung, R.drawable.realme, R.drawable.pixel,
+            R.drawable.lg, R.drawable.panasonic, R.drawable.nokia, R.drawable.sony};
+
+    String college="National Institute of Technology";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_grid);
+        //set ids
+
+        gridView=findViewById(R.id.gridView);
+
+
+        CustomGridAdapter adapter=new CustomGridAdapter(this, mobiles, logos);
+        gridView.setAdapter(adapter);
+
+    }
+}

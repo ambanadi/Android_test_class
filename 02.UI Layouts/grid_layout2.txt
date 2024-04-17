@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text="Grid Layout"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FBA8A8"
+                android:gravity="center"
+                android:text="One" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FDDF7F"
+                android:gravity="center"
+                android:text="Two" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FDDF7F"
+                android:gravity="center"
+                android:text="Three" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FBA8A8"
+                android:gravity="center"
+                android:text="Four" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FBA8A8"
+                android:gravity="center"
+                android:text="Five" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FDDF7F"
+                android:gravity="center"
+                android:text="Six" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FDDF7F"
+                android:gravity="center"
+                android:text="Seven" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FBA8A8"
+                android:gravity="center"
+                android:text="Eight" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FBA8A8"
+                android:gravity="center"
+                android:text="Nine" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FDDF7F"
+                android:gravity="center"
+                android:text="Ten" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FDDF7F"
+                android:gravity="center"
+                android:text="Eleven" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FBA8A8"
+                android:gravity="center"
+                android:text="Twelve" />
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

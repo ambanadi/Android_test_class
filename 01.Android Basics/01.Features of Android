@@ -1,0 +1,18 @@
+(၁). Features of Android
+#1 	Beautiful UI (Android OS အခြေခံ မျက်နှာပြင်သည် လှပပြီး  အသုံးပြုသူ အင်တာဖေ့စ်ကို ပံ့ပိုးပေးပါသည်။)
+#2 	Connectivity (GSM/EDGE, IDEN, CDMA, EV-DO, UMTS, Bluetooth, Wi-Fi, LTE, NFC and WiMAX)
+#3 	Storage (SQLite စတဲ့ ပေါ့ပါးသော ဆက်စပ်ဒေတာဘေ့စ်ကို ဒေတာသိမ်းဆည်းခြင်းရည်ရွယ်ချက်အတွက်အသုံးပြုသည်။)
+#4 	Media support (MPEG-4 SP, AMR, AMR-WB, AAC, HE-AAC, AAC 5.1, MP3, MIDI, Ogg Vorbis, WAV, JPEG, PNG, GIF, and BMP)
+#5 	Messaging (SMS and MMS)
+#6 	Web browser (HTML5 နှင့် CSS3 ကိုပံ့ပိုးပေးသည့် Chrome ၏ V8 JavaScript အင်ဂျင်နှင့်တွဲဖက်ထားသော open-source WebKit အပြင်အဆင်အင်ဂျင်ကို အခြေခံထားသည်။)
+#7 	Multi-touch (Android တွင် HTC Hero ကဲ့သို့သော ဟန်းဆက်များတွင် အစပိုင်းတွင် ရရှိနိုင်သည့် Multi-touch အတွက် မူရင်း ပံ့ပိုးမှု ရှိပါသည်။)
+#8 	Multi-tasking (တစ်ချိန်တည်းတွင် အမျိုးမျိုးသော အပလီကေးရှင်းများကို တစ်ပြိုင်နက် လုပ်ဆောင်နိုင်သည်။)
+#9 	Resizable widgets (widgets များကို အရွယ်အစားပြောင်းလဲနိုင်သောကြောင့် အသုံးပြုသူများသည် အကြောင်းအရာပြသရန် သို့မဟုတ် နေရာချွေတာရန်အတွက် လုပ်ဆောင်နိုင်သည်။)
+#10 	Multi-Language (ဦးတည်ချက်တစ်ခုတည်းနှင့် များစွားလမ်းညွန်စာသားကို ပံ့ပိုးပေးသည်။)
+#11 	GCM (Google Cloud Messaging (GCM) မက်ဆေ့ချ်တိုတို ဒေတာ ပေးပို့နိုင်စေမည့် ဝန်ဆောင်မှုကိုလည်းလုပ်ဆောင်နိုင်သည်။)
+#12 	Wi-Fi Direct (Wi-Fi ချိတ်ဆက်အသုံးပြုမူလည်း ပံ့နိုင်သည်)
+#13 	Android Beam (NFC-ဒေတာ ပြောင်းလဲ ကူယူမူလုပ်ဆောင်နိုင်သည်)
+=================
+၂. Categories of Android applications( categories ပုံကို ကြည့်ပါ)
+၃. History of Android ( History ပုံကို ကြည့်ပါ)
+၄. Architecture ( Architecture ပုံကို ကြည့်ပါ)

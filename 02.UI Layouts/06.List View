@@ -1,0 +1,59 @@
+1 android:id
+2 	android:divider drawable or color 
+3 	android:dividerHeight -px, dp, sp, in, or mm.
+4 	android:entries
+5 	android:footerDividersEnabled  (false, true)
+6 	android:headerDividersEnabled (false, true)
+-------------------
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+   tools:context=".ListActivity" >
+
+   <ListView
+      android:id="@+id/mobile_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
+   </ListView>
+ 
+</LinearLayout>
+---------------------------------
+activity_listview.xml
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/label"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:padding="10dip"
+   android:textSize="16dip"
+   android:textStyle="bold" >
+</TextView>
+-----------------------
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class ListDisplay extends Activity {
+   // Array of strings...
+   String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
+      "WebOS","Ubuntu","Windows7","Max OS X"};
+   
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_main);
+      
+      ArrayAdapter adapter = new ArrayAdapter<String>(this, 
+         R.layout.activity_listview, mobileArray);
+      
+      ListView listView = (ListView) findViewById(R.id.mobile_list);
+      listView.setAdapter(adapter);
+   }
+}
+----------------------

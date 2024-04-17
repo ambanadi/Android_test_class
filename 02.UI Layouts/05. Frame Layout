@@ -1,0 +1,23 @@
+1 android:id 
+2 	android:foreground ("#rgb", "#argb", "#rrggbb", or "#aarrggbb")
+3 	android:foregroundGravity (top, bottom, left, right, center, center_vertical, center_horizontal etc.)
+4 android:measureAllChildren (VISIBLE or INVISIBLE state when measuring. Defaults to false)
+-----------------------
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+   
+   <ImageView 
+      android:src="@drawable/ic_launcher"
+      android:scaleType="fitCenter"
+      android:layout_height="250px"
+      android:layout_width="250px"/>
+   
+   <TextView
+      android:text="Frame Demo"
+      android:textSize="30px"
+      android:textStyle="bold"
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent"
+      android:gravity="center"/>
+</FrameLayout>
