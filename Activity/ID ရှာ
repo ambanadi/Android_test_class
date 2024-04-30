@@ -1,0 +1,25 @@
+Button b1
+------
+ b1=v.findViewById(R.id.b1); 
+ --------
+ editText1=(EditText)findViewById(R.id.editText1);
+ ---------
+
+ <activity
+android:name=".MainActivity"
+android:label="@string/app_name" >
+<intent-filter>
+<action android:name="android.intent.action.MAIN" />
+<category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+</activity>
+-------------------
+<activity
+android:name=".Activity2"
+android:label="Activity2">
+</activity>
+===========
+<activity    
+       android:name=".SecondActivity"    
+       android:exported="true" >
+</activity>
