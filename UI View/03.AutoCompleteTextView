@@ -113,75 +113,14 @@ Attribute
     }
 }
 ---------------------------------------------------
+Next Acyivity--
+        TextView textView = findViewById(R.id.textView);
 
-        // Load items from item file
-        itemsList = loadItems("items.txt");
+        // Get the data passed from MainActivity
+        String data = getIntent().getStringExtra("data");
 
-        // Load data from data file
-        dataObject = loadData("data.json");
-
-        AutoCompleteTextView autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
-
-        // Load items into AutoCompleteTextView
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, itemsList);
-        autoCompleteTextView.setAdapter(adapter);
-
-        // Handle item selection
-        autoCompleteTextView.setOnItemClickListener((parent, view, position, id) -> {
-            String selectedItem = (String) parent.getItemAtPosition(position);
-
-            // Get data associated with selected item
-            String data = getDataForItem(selectedItem);
-
-            // Pass data to next activity
-            Intent intent = new Intent(auto_com.this, Next_Activity.class);
-            intent.putExtra("data", data);
-            startActivity(intent);
-        });
-    }
-
-    private List<String> loadItems(String fileName) {
-        List<String> items = new ArrayList<>();
-        try {
-            InputStream is = getAssets().open(fileName);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            String text = new String(buffer);
-            String[] lines = text.split("\n");
-            for (String line : lines) {
-                items.add(line.trim());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return items;
-    }
-
-    private JSONObject loadData(String fileName) {
-        JSONObject jsonObject = null;
-        try {
-            InputStream is = getAssets().open(fileName);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            String text = new String(buffer);
-            jsonObject = new JSONObject(text);
-        } catch (IOException | JSONException e) {
-            e.printStackTrace();
-        }
-        return jsonObject;
-    }
-
-    private String getDataForItem(String item) {
-        try {
-            return dataObject.getString(item);
-        } catch (JSONException e) {
-            e.printStackTrace();
-            return "";
-        }
+        // Display the data
+        textView.setText(data);
     }
 }
 ------------------------------------------------
